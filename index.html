@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ---------------- Fonts_Google Link --------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CZ&display=swap" rel="stylesheet">
+    <!-- ---------------- ASO Link --------------- -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ---------------- FontsAwesome Links --------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ---------------- Style File Link--------------- -->
+    <link rel="stylesheet" href="style.css">
+    <!-- ---------------- js link --------------- -->
+    <script src="app.js"></script>
+    <!-- ------------- firebase link ---------------- -->
+    <!-- <script type="module" src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app.js"></script> -->
+    <!-- <script type="module" src="https://www.gstatic.com/firebasejs/10.12.4/firebase-database.js"></script> -->
+    <!-- ---------------- Bootstrap Link --------------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!-- *------------ Loader Section ------------* -->
+    <section>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+        </div>
+    </section>
+    <!-- *------------ Navbar Section ------------* -->
+    <nav class="navbar navbar-expand-lg navbar-light  navmain ">
+        <div class="container" data-aos="flip-up">
+            <a class="navbar-brand logoname" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 linkstyle">
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-3" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-1" href="#contactme">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- *------------ My Slef Section ------------* -->
+    <section id="home" class="section" style="width:100;">
+        <div style="background-color: #091540;">
+            <div class="row g-0">
+                <div class="col-sm-6 col-md-6" data-aos="slide-right">
+                    <div class="name">
+                        <div>
+                            <h3 class="nameh3">
+                                Hello👋,Slef
+                            </h3>
+                            <h1 class="nameh1">
+                                Muhammad Faizan
+                            </h1>
+                            <div class="iam">
+                                and i am
+                                <span style="color: gold;" id="element"></span>
+                            </div>
+                            <div class="resumediv">
+                                <a href="file:///C:/Users/Lenovo/Downloads/Blue%20Simple%20Professional%20CV%20Resume%20(3).pdf"
+                                    class="resume" style="text-decoration: none; font-family: serif;"> Resume</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-6 ">
+                    <div class="animationdiv">
+                        <div class="animationdchild">
+                            <div data-aos="slide-left">
+                                <script
+                                    src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                    type="module"></script>
+                                <dotlottie-player
+                                    src="https://lottie.host/ab015c68-28d9-416f-a8aa-817a850c424f/kvcJWvTFg2.json"
+                                    background="transparent" speed="2" class="animationimage1" loop
+                                    autoplay></dotlottie-player>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- *------------ About Section ------------* -->
+    <section id="about" class="section" style="margin-top: -15px; overflow: hidden;">
+        <div style="background-color: aliceblue;">
+            <div>
+                <hr class="custom-hr">
+            </div>
+            <div>
+
+                <h1 data-aos="fade-down-left" class="section3">About Me<span class="dot">:</span>
+            </div>
+            <div class="row">
+                <!-- *------------ Left Image ------------* -->
+                <div class="col-sm-6 col-md-6" data-aos="fade-up">
+                    <div class="animationdiv1">
+                        <div class="animationdchild1">
+                            <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                                type="module"></script>
+                            <dotlottie-player
+                                src="https://lottie.host/c3f8f7bc-beba-4b56-a405-4f9381de84e7/cMJo3FSJVG.json"
+                                background="transparent" speed="1" class="animationimage2" loop
+                                autoplay></dotlottie-player>
+                        </div>
+                    </div>
+                </div>
+                <!-- *------------ Right About Contant ------------* -->
+                <div class="col-sm-6 col-md-6">
+                    <div class="animationdiv2">
+                        <div class="animationdchild2">
+                            <div>
+                                <div>
+                                    <div data-aos="fade-up">
+                                        <p class="aboutpara">
+                                            I'm a front-end developer passionate about crafting engaging web
+                                            experiences. With expertise in
+                                            HTML, CSS, JavaScript, and React, I leverage Bootstrap and Tailwind CSS to
+                                            create modern,
+                                            responsive interfaces. I thrive on combining creativity with technical
+                                            skills to deliver
+                                            user-friendly designs that exceed expectations.
+                                        </p>
+                                        <div class="buttonend">
+                                            <button class="bottonall">
+                                                More
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="custom-hr">
+            </div>
+            <!-- *------------ Project Section ------------* -->
+            <section id="project" class="section">
+                <div>
+                    <h1 data-aos="fade-down-left" class="section3 pt-4">Project<span
+                            style="color: black; font-size: 0.9em;">:</span></h1>
+                    <div class="container">
+                        <div class="pt-4 border-start-0 border-end-0 border-bottom-0 ps-3 pb-5">
+                            <div class="row g-5">
+                                <div class="col">
+                                    <div class="projectmain" data-aos="fade-left">
+                                        <h3 class="projecthedding" data-aos="zoom-in">Reglabal</h3>
+                                        <div class="card imges" data-aos="fade-left">
+                                            <a href="https://ragrebel-1f906.web.app/"><img src="./img/image.png"
+                                                    class="card-img-top imge" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="projectmain" data-aos="fade-left">
+                                        <h3 class="projecthedding" data-aos="zoom-in">Shapley demo</h3>
+                                        <div class="card imges" data-aos="fade-left">
+                                            <a href="https://frontpage-shapelydemo.web.app/"><img
+                                                    src="./img/Screenshot 2024-07-20 133102.png"
+                                                    class="card-img-top imge" alt="T.Shirt"></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="projectmain" data-aos="fade-left">
+                                        <h3 class="projecthedding" data-aos="zoom-in">Registration Form</h3>
+                                        <div class="card imges" data-aos="fade-left">
+                                            <a href="https://jawanpakistanform-42d8c.web.app/"><img
+                                                    src="./img/Screenshot 2024-07-20 133017.png"
+                                                    class="card-img-top imge" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="projectmain" data-aos="fade-right">
+                                        <h3 class="projecthedding" data-aos="zoom-in">Todo App</h3>
+                                        <div class="card imges" data-aos="fade-right">
+                                            <a href="https://to-do-app-822c9.web.app/"><img
+                                                    src="./img/Screenshot 2024-07-20 133250.png"
+                                                    class="card-img-top imge" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="projectmain" data-aos="fade-right">
+                                        <h3 class="projecthedding" data-aos="zoom-in">Calculator</h3>
+                                        <div class="card imges" data-aos="fade-right">
+                                            <a href="https://calculator-app-d808b.web.app/"><img
+                                                    src="./img/Screenshot 2024-07-20 133145.png"
+                                                    class="card-img-top imge" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="projectmain" data-aos="fade-right">
+                                        <h3 class="projecthedding" data-aos="zoom-in">Quiz App</h3>
+                                        <div class="card imges" data-aos="fade-right">
+                                            <a href="https://quiz-app-95f3d.web.app/"> <img
+                                                    src="./img/Screenshot 2024-07-20 133308.png"
+                                                    class="card-img-top imge" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <hr class="custom-hr">
+            </div>
+            <!-- *------------ Skills Section ------------* -->
+            <section id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6">
+                            <div>
+                                <h1 data-aos="fade-down-left" class="section3">Skills<span
+                                        style="color: black; font-size: 0.9em;">:</span></h1>
+                            </div>
+                            <div data-aos="fade-up" class="top-main">
+                                <div class="indfo">
+                                    <span>HTML<span class="html1"></span></span>
+                                    <div class="progress-line html">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">90%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span>CSS <span class="css1"></span></span>
+                                    <div class="progress-line css">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">75%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span>JavaScript <span class="javascript1"></span></span>
+                                    <div class="progress-line javascript">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">60%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span>React <span class="react1"></span></span>
+                                    <div class="progress-line react">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">70%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span class="mb-2">React-Native <span class="reactnative1"></span></span>
+                                    <div class="progress-line reactnative">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">70%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span>Bootstrap <span class="bootstrap1"></span></span>
+                                    <div class="progress-line bootstrap">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">75%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span>Material ui <span class="materialui1"></span></span>
+                                    <div class="progress-line materialui">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">65%</span>
+                                    </div>
+                                </div>
+                                <div class="indfo">
+                                    <span>Tailwind css <span class="tailwind1"></span></span>
+                                    <div class="progress-line tailwind">
+                                        <span
+                                            style="color: black; font-size: 14px; display:flex; justify-content: center; align-items: center;font-family: 'Times New Roman', Times, serif;">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div>
+                                <h1 data-aos="fade-down-left" class="section3">Services<span
+                                        style="color: black; font-size: 0.9em;">:</span></h1>
+                            </div>
+                            <div class="servicesdiv" style="margin-top:60px;">
+                                <div data-aos="fade-left" class="cards">
+                                    <h1 class="servicesname">Web Development</h1>
+                                    <p style="color: rgb(100, 99, 99);">Sure! "Web Development Fresh is a dynamic
+                                        platform offering cutting-edge web
+                                        solutions tailored to modern digital needs. We specialize in responsive design,
+                                        seamless user experiences."</p>
+                                </div>
+                                <div data-aos="fade-left" class="cards">
+                                    <h1 class="servicesname">Ui/Ux Design</h1>
+                                    <p style="color: rgb(100, 99, 99);">"I'm a creative UI/UX designer passionate about
+                                        crafting
+                                        intuitive digital experiences that blend aesthetics with
+                                        functionality. With a keen eye for detail and user-centric
+                                        design principles, I strive to create impactful solutions
+                                        that resonate with users and elevate brands."</p>
+                                </div>
+                                <div data-aos="fade-left" class="cards">
+                                    <h1 class="servicesname">responsive</h1>
+                                    <p style="color: rgb(100, 99, 99);">Responsive Web Design is about using HTML and
+                                        CSS to
+                                        automatically resize, hide, shrink, or enlarge, a website,
+                                        to make it look good on all devices (desktops, tablets, and phones):
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div>
+                <hr class="custom-hr">
+            </div>
+
+            <!-- *------------ Contact Section ------------* -->
+
+            <section id="contactme" class="section">
+                <div class="container">
+                    <div class="inputd1">
+                        <div class="inputd2">
+                            <h1 data-aos="fade-down-left" class="section3 mb-4"> Contact Me<span
+                                    style="color: black; font-size: 0.9em;">:</span></h1>
+                            <div data-aos="zoom-in" class="maininput">
+                                <div class="inputdiv">
+                                    <input type="text" placeholder=" Enter Name" id="name">
+                                </div>
+                                <div class="inputdiv">
+                                    <input type="email" placeholder=" Enter Email" id="email">
+                                </div>
+                                <div class="inputdiv">
+                                    <input type="number" placeholder="Enter Phone Number" id="number">
+                                </div>
+                                <div class="inputdiv">
+                                    <textarea placeholder="Enter Message" id="message"></textarea>
+                                    <div class="buttonsubmitend">
+                                        <button type="submit" onclick="submit()" class="bottonsubmit">
+                                            Submit
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- main background -->
+        </div>
+    </section>
+
+    <!-- *------------ Footer Section ------------* -->
+    <footer>
+        <div class="footerchild">
+            <h1 data-aos="fade-right" class="Follow">Follow Me<span style="color:#86aaff; font-size: 0.9em;">:</span>
+            </h1>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/faizan-memon-a02006265/"><i data-aos="fade-left"
+                        class="fa-brands fa-linkedin iconsize" style=" color: blue;"></i></a>
+                <a href="https://github.com/Muhammad-Faizan205"><i data-aos="fade-left"
+                        class="fa-brands fa-github iconsize" style="color: white;"></i></a>
+                <a href="https://www.facebook.com/faizan.samaa.7/"><i data-aos="fade-left"
+                        class="fa-brands fa-facebook iconsize" style="color: blue;"></i></a>
+                <a href="https://www.instagram.com/faizan_memon02/"><i data-aos="fade-left"
+                        class="fa-brands fa-instagram iconsize" style="color: red;"></i></a>
+                <div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <hr class="custom-hr">
+        </div>
+        <div>
+            <div class="numgamil">
+                <div data-aos="zoom-in" style="text-align: center;">
+                    <a class="linksnum" href="#"><i style="color: #86aaff;" class="fa-solid fa-phone icon2size"></i>
+                        <p>0324-3256931</p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" style="text-align: center;">
+                    <a class="linksnum" href="mailto:smartfaiza53@gmail.com"><i style="color: #86aaff;"
+                            class="fa-solid fa-envelope icon2size"></i>
+                        <p>smartfaiza53@gmail.com </p>
+                    </a>
+                </div>
+                <div data-aos="zoom-in" style="text-align: center; ">
+                    <a class="linksnum"
+                        href="https://www.google.com/maps/place/Kharadar+Karachi,+Karachi+City,+Sindh,+Pakistan/@24.8506243,66.9964607,19.79z/data=!4m6!3m5!1s0x3eb315f93b223081:0xca997094f4f689ad!8m2!3d24.8503898!4d66.9950779!16zL20vMDlwM18y?entry=ttu"><i
+                            style="color: #86aaff;" class="fa-solid fa-location-dot icon2size"></i>
+                        <p>Kharadar
+                            Karachi, Karachi City, Sindh
+                            Pakistan </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <hr class="custom-hr">
+        </div>
+        <div class="made">
+            <p class="para">@2024 All Right Reserved</p>
+            <p class="para">Made by:<span class="faizan">Muhammad Faizan.</span></p>
+        </div>
+        <div class="what">
+            <a href="">
+                <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+                    type="module"></script>
+                <dotlottie-player class="what1"
+                    src="https://lottie.host/1afc481d-8e52-4ad4-888e-dc0c4b0b0d18/YNoYbxfMNW.json"
+                    background="transparent" speed="1" style="width: 100px; height: 100px;" loop
+                    autoplay></dotlottie-player>
+            </a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                document.getElementById("loader-wrapper").style.display = "none";
+            }, 1000);
+        });
+    </script>
+    <!-- ---------------- Bootstrap Script Link--------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- ---------------- AOS Script Link--------------- -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- ---------------- typechange Script Link--------------- -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Front-end Developer'],
+            typeSpeed: 60,
+        });
+    </script>
+</body>
+
+</html>
